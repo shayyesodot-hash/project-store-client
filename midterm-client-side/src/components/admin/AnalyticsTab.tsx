@@ -1,4 +1,4 @@
-import { AttachMoney, Group, Inventory, TrendingUp, Warning } from "@mui/icons-material";
+import { AttachMoney, Group, Inventory, TrendingUp } from "@mui/icons-material";
 import { Box, Card, CardContent, CircularProgress, Grid, Typography } from "@mui/material";
 import type { Analytics, Item } from "../../types";
 
@@ -9,7 +9,7 @@ interface AnalyticsTabProps {
     allItems?: Item[];
 }
 
-export const AnalyticsTab = ({ analytics, totalProductsCount, lowStockItems, allItems = [] }: AnalyticsTabProps) => {
+export const AnalyticsTab = ({ analytics, totalProductsCount, allItems = [] }: AnalyticsTabProps) => {
     if (!analytics) {
         return (
             <Box sx={{ display: "flex", justifyContent: "center", py: 10 }}>
