@@ -1,5 +1,6 @@
-# Netlify Configuration File
-# Fixes "Page Not Found (404)" on page refresh or direct URLs for client-side routing (React Router)
+[build]
+  publish = "dist"
+  command = "npm run build"
 
 [[redirects]]
   from = "/*"
